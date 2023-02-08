@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<style>
+body {
+	margin: 0;
+}
+div {
+    height:1350px;
+    width:100%;
+    position:relative;
+    background:#F5F5F5;
+}
+div::after, div::before {
+    height:1350px;
+    content:' ';
+    position: absolute;
+    top: 0;
+    width: 27%;
+}
+div::after {
+    right: 0;
+    background-color: #E4FFEA;
+}
+div::before {
+    left: 0;
+    background-color: #E4FFEA;
+}
+.headercenter {
+	text-align: center;
+	color:maroon;
+}
+p{
+	margin: 20px 430px;
+	font-weight: bold;
+	font-family:'Courier New';
+	font-size:20px;
+}
+h1{
+	font-size:28px;
+}
+h2{
+	font-size:25px;
+}
+img{
+	aspect-ratio : 1 / 1;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 46%;
+}
+</style>
+<html>
+<body style="background-color:#E4FFEA;">
+<div>
+	<h1 class="headercenter">
+		Correlation between different schools of thought
+	</h1>
+	<h2 class="headercenter">
+		Ethan Xu
+	</h2>
+	<p>
+	In philosophy, different people have different opinions. Schools of thought is the perspective of a group of people who share the same opinions.
+	However, I wondered how similar different schools of thought would be. Would Plato's school of thought have more similarity with Aristotle's school of thought than others since Aristotle was Plato's student?
+	</p>
+	<p>
+	In this project, I used data containing over 300,000 sentences from over 50 texts spanning 10 major schools of philosophy. The represented schools are: Plato, Aristotle, Rationalism, Empiricism, German Idealism, Communism, Capitalism, Phenomenology, Continental Philosophy, and Analytic Philosophy.
+	(The data could be found <u><a href="https://www.kaggle.com/datasets/kouroshalizadeh/history-of-philosophy">here</a></u>)
+	</p>
+	<p>
+	After performing data analysis, we find the correlation between the different schools. The result is given by the graph below.
+	</p>
+	<img src="../figs/results.png" alt="no good">
+	<p>
+	We notice that most pairs of schools have similar correlation. However, we notice that communism has the least correlation with every other school of thought.
+	</p>
+</div>
+</body>
+</html>
